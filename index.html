@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laptop Repair Tracker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">  document.getElementById('logout-btn').addEventListener('click', function() {
+    document.getElementById('admin-ui').classList.add('hidden');
+    document.getElementById('customer-ui').classList.remove('hidden');
+  });
+$1
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
       const supabase = supabase.createClient(
@@ -68,8 +72,10 @@
     </div>
 
     <!-- Admin UI -->
-    <div id="admin-ui" class="container mx-auto py-8 hidden">
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+    $1
+            <div class="text-end mb-3">
+                <button id="logout-btn" class="btn btn-danger">Logout</button>
+            </div>
             <h2 class="text-xl font-bold text-blue-600 mb-4">Add New Repair</h2>
             <form id="repair-form" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <input id="service-number" class="form-control" placeholder="Service Number" required>
